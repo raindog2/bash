@@ -1,0 +1,15 @@
+#!/bin/bash
+#script to test the concept of $0, $1, $2
+#this works like argv in python
+
+echo "
+Hello, the value of the first variable you gave me on the command line, which is a variable called \$1, is $1.
+"
+echo "The value of the second variable you gave me, which is a variable called \$2, is $2.
+"
+echo "I can also count up the number of variables you defined for me, and store it in a variable called \$#.  The value of that variable, currently, is $#.
+"
+echo "And the name of the command itself (i.e. the script) is assigned to a variable called \$0; for this script it is $0.
+"
+echo "Lastly, there is the variable \$@, which holds the values of all the variables entered, and its value, given what you entered, is $@.
+"

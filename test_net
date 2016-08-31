@@ -1,0 +1,17 @@
+#!/bin/bash
+#discovers if we are home, on Thrasymachus LAN, or afield and connecting to Thrasymachus from the WAN
+
+HOMENET="Thrasymachus"
+
+echo "Checking whether we are on the LAN or on the WAN..."
+sleep 1
+LOCATION=`iwconfig | grep -c $HOMENET`
+if [  "$LOCATION" -ge "1" ] ; then
+	NETTYPE="LAN"
+	else
+	if [ "$LOCATION" -lt "1" ] ; then
+	NETTYPE="WAN"
+	fi
+fi
+
+echo $NETTYPE

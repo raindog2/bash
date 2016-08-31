@@ -1,0 +1,13 @@
+#!/bin/bash
+#Chapter 7, Exercise 1
+
+#backtics allow for shell commands to be seen as commands inside a string.
+echo "Today is `date`"
+#could also do this:
+#echo "Today is $(date)"
+
+#$ does the same for variables, calls for their value rather than their name
+echo "Your are currently in $(pwd) and your host is $HOSTNAME."
+#could also do this
+#echo "...your host is $(hostname)"
+

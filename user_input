@@ -1,0 +1,17 @@
+#!/bin/bash
+#learing how to used "read" to get input from the user, assign it to a variable, and then use that variable to print feedback.
+
+clear
+read -p "Oh my God what's your name, my name's $(hostname). 
+> " name
+read -p "Hello, $name, how are you? 
+> " state_of_mind
+echo "I understand.  I get it.  You are '$state_of_mind.'"  
+sleep 3
+echo "But to be honest I don't care...I'm a computer."
+sleep 4
+read -p "Were you hoping I would? Care?
+> " hopes
+sleep 2
+echo "'$hopes.' Huh. smh."
+
